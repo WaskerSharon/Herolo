@@ -1,0 +1,32 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    margin: $center;
+    width: 100%;
+    
+    .bgImg{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100%;
+        margin: $center;
+        z-index: -10;
+        opacity: 0.3;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+}
+
+
+@include responsive(phone){
+    .bgImg{
+       width: 100%
+    }
+}
+
+
+}

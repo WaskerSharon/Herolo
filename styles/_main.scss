@@ -1,0 +1,107 @@
+.days{
+    margin-top: 90px;
+    width: 100%;
+
+.days__section__one, .days__section__two, .days__section__one__pair__first,
+.days__section__one__pair__second, .days__section__two__pair__first, .days__section__two__pair__second{
+    @include flexCenter();
+}
+
+.days__card__degrees{
+    @include flexCenter();
+}
+
+.days__card{
+    width: 250px;
+    height: 250px;
+    box-shadow: $shadowBox;
+    margin: 5px;
+    padding: 20px;
+    background-color: #ffffffd4;
+    border: 1px solid rgba(4, 116, 235, 0.562);
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.days__card__degree__day, .days__card__degree__night{
+    @include flexCenter();
+    margin: 4px;
+}
+
+h2{
+    font-size: 1.3em;
+}
+
+h3{
+    font-size: 1.4em;
+}
+
+.days__card__subTitle{
+    font-size: 1.15em;
+}
+
+.days__card__degree__night{
+    color: #00000093;
+}
+
+.days__card__icon{
+    width: 17%;
+    margin: -10px 0px 5px;
+}
+
+.days__card__weather__dataBox{
+    padding: 0px;
+}
+
+.days__card__weather__data{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+   
+}
+
+.days__card__weather__data--text{
+    margin: 0px 5px; 
+    font-size: 1em;
+    color: #212529e5;
+}
+
+h5{
+    font-size: 1.2em;
+}
+
+
+@include responsive(bigDesktop){
+    font-size: 100%;
+}
+
+@include responsive(tabLand){
+    font-size: 90%;
+    .days{
+    margin-top: 6%;
+    }
+    .days__card{
+        width: 200px;
+        height: 220px;
+    }
+}
+
+@include responsive(tabPort){
+    font-size: 80%;
+    .days__card{
+        width: 200px;
+        height: 200px;
+    }
+    .days__section__one, .days__section__two{
+        display: block;
+    }
+}
+
+@include responsive(phone){
+    font-size: 70%;
+}
+
+
+}

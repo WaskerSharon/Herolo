@@ -1,0 +1,83 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    background-color: #ffffff96;
+    border-bottom: 1px solid rgb(4, 116, 235);
+    color: $textColor;
+    margin: $center;
+    height: 30%;
+    box-shadow: $shadowBox;
+
+    h1{
+        font-size: 3em;
+        margin: 30px;
+    }
+
+    .header__search {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+    }
+    
+    .header__search:after {
+        content:' ';
+        position: absolute;
+        left: 165px;
+        top: 0px;
+        height: 30px;
+        width: 40px;
+        background: rgb(4, 116, 235);
+        border-radius: 0 30px 30px 0;
+        z-index: 200;
+        cursor: pointer;
+    }
+
+    .header__search__inputSearch{
+        border: 1px solid rgb(4, 116, 235);
+        border-radius: 30px;
+        padding-left: 10px;
+        height: 30px;
+    }
+
+    .fa-search {
+        position: absolute;
+        right: -2px;
+        top: 7px;
+        cursor: pointer;
+        z-index: 201;
+        color: #ffffff;
+    }
+
+
+
+
+@include responsive(tabPort){
+    .header__search{
+        top: -5px;
+        right: -28px;
+    }
+}
+
+    
+@include responsive(phone){
+    width: 100%;
+ .header__search{
+     top: -7px;
+     right: 12px;
+ }
+
+}
+
+@include responsive(miniPhone){
+    width: 100%;
+ .header__search{
+     top: 55px;
+     right: 40px;
+ }
+
+}
+
+
+}
