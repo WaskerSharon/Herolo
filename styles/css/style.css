@@ -61,7 +61,7 @@ header .header__search {
 header .header__search:after {
   content: ' ';
   position: absolute;
-  left: 165px;
+  left: 120px;
   top: 0px;
   height: 30px;
   width: 40px;
@@ -76,15 +76,17 @@ header .header__search__inputSearch {
   border-radius: 30px;
   padding-left: 10px;
   height: 30px;
+  width: 150px;
 }
 
 header .fa-search {
   position: absolute;
-  right: -2px;
-  top: 7px;
+  right: 3px;
+  top: 8px;
   cursor: pointer;
   z-index: 201;
   color: #ffffff;
+  font-size: 0.9em;
 }
 
 @media (max-width: 57em) {
@@ -109,8 +111,11 @@ header .fa-search {
     width: 100%;
   }
   header .header__search {
-    top: 55px;
-    right: 40px;
+    top: 5px;
+    right: 10px;
+  }
+  header h1 {
+    font-size: 90%;
   }
 }
 
